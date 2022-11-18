@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Nexus</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="bg">
+            <video src="assets/core/bg.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="wrapper">
+            <div class="nav">
+                <div class="logo">
+                    <h1>Nexus</h1>
+                </div>
+                <!-- 
+                <div class="ham">
+                    <i class="fa-solid fa-bars"></i>
+                </div> -->
+
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="team.html" class="active">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="members">
+                    <div class="bar">
+                        <div class="left">
+                            <h2 class="active">Members</h2>
+                            <h2>Aluminis</h2>
+                        </div>
+                        <div class="right">
+                            <form action="" class="search">
+                                <input class="search__input" type="search" placeholder="Search" id="searchInput" onkeyup="searchMembers()">
+
+                                <div class="search__icon-container">
+                                    <label for="searchInput" class="search__label" aria-label="Search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                                        </svg>
+                                    </label>
+
+                                    <button class="search__submit" aria-label="Search">
+                                        <svg viewBox="0 0 1000 1000" title="Search">
+                                            <path fill="currentColor"
+                                                d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <ul class="list">
+                        <li class="member">
+                            <div class="pfp">
+                                <img src="https://avatars.githubusercontent.com/u/67160842?v=4" alt="">
+                            </div>
+
+                            <div class="member-info">
+                                <p class="member-name">Vinayak Shukla</p>
+                                <span class="member-role">President</span>
+
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="member">
+                            <div class="pfp">
+                                <img src="https://avatars.githubusercontent.com/u/67160842?v=4" alt="">
+                            </div>
+
+                            <div class="member-info">
+                                <p class="member-name">Shrit Shrivastava</p>
+                                <span class="member-role">President</span>
+
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="member">
+                            <div class="pfp">
+                                <img src="https://avatars.githubusercontent.com/u/67160842?v=4" alt="">
+                            </div>
+
+                            <div class="member-info">
+                                <p class="member-name">Aviral Vohra</p>
+                                <span class="member-role">President</span>
+
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

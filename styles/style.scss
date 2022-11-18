@@ -1,0 +1,275 @@
+@import 'global.scss';
+@import 'other/search.css';
+@import url('https://api.fontshare.com/v2/css?f[]=chillax@1,600,500,300,700,400,200&display=swap');
+
+// variables
+$white: #fff;
+$black: #111;
+$glassDark: rgba($color: black, $alpha: 0.5);
+$glassLight: rgba($color: $white, $alpha: 0.2);
+
+@mixin blurBackgroundDark() {
+    background: $glassDark;
+    backdrop-filter: blur(10px);
+}
+
+@mixin blurBackgroundLight() {
+    background: $glassLight;
+    backdrop-filter: blur(10px);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Chillax', sans-serif;
+}
+
+body {
+    font-family: 'Chillax', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+
+    .bg {
+        position: fixed;
+        z-index: -2;
+    }
+
+    .overlay {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: #fff;
+        opacity: 0.01;
+        z-index: -1;
+    }
+
+    .wrapper {
+
+        .nav {
+            z-index: 9;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            height: 12vh;
+            width: 100%;
+            color: $white;
+            @include blurBackgroundDark();
+            transition: all .5s ease-in-out;
+
+            .ham {
+                cursor: pointer;
+
+                i {
+                    font-size: 2rem;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        transition: all .5s ease-in-out;
+
+                        &:hover {
+                            font-weight: bold;
+                            letter-spacing: 0.2rem;
+                        }
+
+                        &.active {
+                            font-weight: bold;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .mid {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+
+            .rect {
+                @include blurBackgroundDark();
+                border-radius: 16px 16px 0 0;
+                width: 60%;
+                display: flex;
+                height: 80vh;
+                align-items: flex-end;
+                position: relative;
+
+                .bottom-links {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    ul {
+                        display: flex;
+                        width: 50%;
+                        justify-content: space-around;
+
+                        li {
+                            list-style-type: none;
+
+                            a {
+                                font-size: 1.5rem;
+                                border-radius: 10%;
+                                color: $white;
+                                transition: all .15s ease-in-out;
+
+                                &:hover {
+                                    @include blurBackgroundLight();
+                                    padding: 5px 10px;
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rect-trans {
+                position: absolute;
+                width: 50%;
+                top: 150px;
+                height: 60vh;
+                border-radius: 8px;
+                background-color: rgba($color: $white, $alpha: .3);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+
+                img {
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 30% 70% 25% 75% / 76% 25% 75% 24%;
+                }
+
+                h1 {
+                    margin-bottom: 10px;
+                    font-weight: normal;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.team {
+
+    .members {
+        .bar {
+            margin-bottom: 5vh;
+            padding-top: 15vh;
+            padding-bottom: 2vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                color: $black;
+                font-size: 1.2rem;
+
+                h2 {
+                    cursor: pointer;
+
+                    &.active {
+                        @include blurBackgroundDark();
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            display: flex;
+            width: 27.5vw;
+            height: 15vw;
+            color: $white;
+            border-radius: 7.5px;
+            margin-bottom: 2.5vw;
+            @include blurBackgroundDark();
+
+            .pfp {
+                img {
+                    width: 10vw;
+                    height: 10vw;
+                    border-radius: 100%;
+                    margin: 2.5vw 2vw;
+                    object-fit: cover;
+                }
+            }
+
+            .member-info {
+                font-size: 1.75vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .member-name{
+                font-weight: 400;
+            }
+
+            .member-role{
+                font-size: 1.1rem;
+                font-weight: 500;
+                padding-bottom: 12px;
+            }
+
+            .socials {
+
+                ul {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 10px;
+
+                    li {
+                        list-style-type: none;
+                        a{
+                            color: #b9b9b9;
+                            font-size: 16px;
+                            transition: all .3s ease-in-out;
+
+                            &:hover{
+                            color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
