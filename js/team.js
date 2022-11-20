@@ -38,7 +38,6 @@ function members() {
                             <ul>
                                 ${mail?  `<li><a href="mailto:${founders[i].social.mail}"><i class="fa-regular fa-envelope"></i></a></li>`: `<li style="display: none;><a href="#"><i class="fa-regular fa-envelope"></i></a></li>`}
                                 ${ instagram ?  `<li><a href="${founders[i].social.instagram}"><i class="fa-brands fa-instagram"></i></a></li>`: `<li  style="display: none;"><a href="#"><i class="fa-brands fa-instagram"></i></a></li> `}
-                                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
                                 ${ github ?  `<li><a href="${founders[i].social.github}"><i class="fa-brands fa-github"></i></a></li>`: `<li  style="display: none;"><a href="#"><i class="fa-brands fa-github"></i></a></li> `}
     
                             </ul>
