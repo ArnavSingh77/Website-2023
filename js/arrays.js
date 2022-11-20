@@ -39,7 +39,7 @@ let founders = [
             github: "a",
             mail: "panshulkantansrivastava@gmail.com"
         }
-    }
+    },
     {
         img: "https://media-exp1.licdn.com/dms/image/D4D03AQFUzpaHYVq7xw/profile-displayphoto-shrink_200_200/0/1668949448511?e=1674691200&v=beta&t=-6A-RWCRfAZ9Kcdi3lxMcuWnZ88tN7PfeTi-4lw3xKs",
         name: "Sparsh Agarwal",
