@@ -1,18 +1,18 @@
 let founders = [
     {
         img: "https://avatars.githubusercontent.com/u/67160842?v=4",
-        name: "Vinayak Shukla",
-        role: "President",
+        name: "Anvay Arora",
+        role: "Co-Founder",
         social: {
-            instagram: "d",
-            github: "e",
-            mail: "d"
+            instagram: "https://www.instagram.com/anvay._05/",
+            github: "https://github.com/the-protagonist-view",
+            mail: "anvay.arora5@gmail.com"
         }
     },
     {
         img: "https://avatars.githubusercontent.com/u/67160842?v=4",
-        name: "Anvay Arora",
-        role: "President",
+        name: "Sparsh Agarwal",
+        role: "Co-Founder",
         social: {
             instagram: "",
             github: "",
@@ -20,9 +20,9 @@ let founders = [
         }
     },
     {
-        img: "https://i.postimg.cc/MHtY05ww/Whats-App-Image-2022-08-22-at-7-13-58-AM.jpg",
-        name: "Shrit Shrivastava",
-        role: "President",
+        img: "https://avatars.githubusercontent.com/u/67160842?v=4",
+        name: "Arnav Sarda",
+        role: "Co-Founder",
         social: {
             instagram: "",
             github: "",
@@ -32,8 +32,8 @@ let founders = [
     },
     {
         img: "https://avatars.githubusercontent.com/u/67160842?v=4",
-        name: "Shrit Shrivastava",
-        role: "President",
+        name: "Kanishk Jain",
+        role: "Co-Founder",
         social: {
             instagram: "",
             github: "",
