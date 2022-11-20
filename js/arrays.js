@@ -10,16 +10,6 @@ let founders = [
         }
     },
     {
-        img: "https://avatars.githubusercontent.com/u/67160842?v=4",
-        name: "Sparsh Agarwal",
-        role: "Co-Founder",
-        social: {
-            instagram: "https://www.instagram.com/pablo0chocobar",
-            github: "a",
-            mail: "meetsparsh4@gmail.com"
-        }
-    },
-    {
         img: "https://media-exp1.licdn.com/dms/image/C4D03AQGlkwD6-V8p8w/profile-displayphoto-shrink_200_200/0/1661838003945?e=1674691200&v=beta&t=_KwN5Aqx7l7yI2MCwYrJlMp4aG-pk2ecH00_GP5sC5Q",
         name: "Arnav Sarda",
         role: "Co-Founder",
@@ -28,7 +18,6 @@ let founders = [
             github: "a",
             mail: "asarda04@gmail.com"
         }
-
     },
     {
         img: "https://media-exp1.licdn.com/dms/image/C4E03AQHdQnTQX5FjGA/profile-displayphoto-shrink_200_200/0/1652425772833?e=1674691200&v=beta&t=5bMAIG2mfvEXUdI0dBJnvSRycPaeH2WrBNQrWAo20Fs",
@@ -39,15 +28,26 @@ let founders = [
             github: "a",
             mail: "kj.promager10@gmail.com"
         }
-    }
+
+    },
     {
-        img: "https://pps.whatsapp.net/v/t61.24694-24/306941897_5797827643617233_6158692481151390474_n.jpg?ccb=11-4&oh=01_AdRdSnFVgTWI26dYZ4lyup8mM6qYAEowVkyVAk8FenBBDQ&oe=63874B43",
+       img: "https://pps.whatsapp.net/v/t61.24694-24/306941897_5797827643617233_6158692481151390474_n.jpg?ccb=11-4&oh=01_AdRdSnFVgTWI26dYZ4lyup8mM6qYAEowVkyVAk8FenBBDQ&oe=63874B43",
         name: "Panshul Kantan",
         role: "Co-Founder",
         social: {
             instagram: "a",
             github: "a",
             mail: "panshulkantansrivastava@gmail.com"
+        }
+    }
+    {
+        img: "https://media-exp1.licdn.com/dms/image/D4D03AQFUzpaHYVq7xw/profile-displayphoto-shrink_200_200/0/1668949448511?e=1674691200&v=beta&t=-6A-RWCRfAZ9Kcdi3lxMcuWnZ88tN7PfeTi-4lw3xKs",
+        name: "Sparsh Agarwal",
+        role: "Co-Founder",
+        social: {
+            instagram: "https://www.instagram.com/pablo0chocobar",
+            github: "a",
+            mail: "meetsparsh4@gmail.com"
         }
     }
 ]
